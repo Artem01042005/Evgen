@@ -36,20 +36,8 @@ left: 250px;
 }
 body {
 	margin: 0;
-  background-color:white;
+  background-repeat: none;
 }
-body::after {
-	margin 0;
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  clip-path: polygon(100% 0, 25% 100%, 100% 100%);
-  background-color: #b2b8bc;
-}
-
 .top-img{
 	height: 100%;
 
@@ -148,95 +136,12 @@ font-size: 20px;
 	
 }
 #box1-img{
+	height: 400px;
 	width: 100%;
-	opacity: 0.8;
+	opacity: 0.;
 }
 .box{
 	position: relative;
 	width: 100%;
 	overflow-x: hidden;
 }
-#box7{
-	padding-top: 250px;
-	padding-bottom: 50px;
-	text-align: center;
-	color: #fff;
-}
-
-.box7-card{
-	text-decoration: none;
-	font-size: 25px;
-	text-shadow: 
-        -1px -1px 0 #000,  
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000; /* Тінь з різними зсувами, щоб створити ефект обводки */
-	font-family:Consolas ;
-	color:orange;
-	position: relative;
-	background: linear-gradient(130deg, rgba(240,170,7,0.6), rgba(178,184,188,0.6), rgba(240,170,7,0.6));
-	height: 220px;
-	width: 200px;
-	margin: 10px;
-	display: inline-block;
-	transition-duration: 200ms;
-	transition-property: transform,box-shadow;
-}
-.box7-card:hover{
-	transform:translateY(-10px); 
-	box-shadow: 0 20px 20px #000;
-}
-.box7-card-img{
-	margin:20px;
-	padding: 5px;
-	height: 30%;
-	width: 30%;
-}
-.box7-card-text{
-	text-align: center;
-}
-#box4{
-	width: 100%;
-	
-	left: 38px;
-	text-align: left;
-	font-size:21px;
-	text-shadow: 
-        2px 1px 0 #000;  
-	font-family:Consolas ;
-	color:orange;
-}
-#footer{	
-
-}
-#footer a{
-	text-decoration: none;
-	color: #000;
-	min-width: 600px;
-}
-#footer .f-text-link{
-	margin-right:10px;
-}
-#footer .f-text-link:hover{
-	text-decoration:underline;
-	color: #401;
-}
-#from-f-to-top{
-	position: absolute;
-	right: 70px;
-	top: 30px;
-	width: 40px;
-	height:40px;
-	border:solid 5px #aaa;
-	border-radius: 10px;
-	text-align: center;
-	font-size: 40px;
-	color: #aaa;
-	box-shadow: 0 0 10px #000;
-	text-shadow: 0 0 10px #000;
-	transition-duration: 200ms;
-	transition-property: border-color , color;
-}
-#from-f-to-top:hover{
-	border-color: #ffa613;
-	color: #ffa613;
