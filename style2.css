@@ -35,8 +35,20 @@ left: 250px;
     text-decoration: none;
 }
 body {
+	overflow-x: hidden;
 	margin: 0;
-  background-repeat: none;
+  background-color:white;
+}
+body::after {
+	margin 0;
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  clip-path: polygon(100% 0, 25% 100%, 100% 100%);
+  background-color: #b2b8bc;
 }
 .top-img{
 	height: 100%;
@@ -96,52 +108,72 @@ font-size: 20px;
     color: #3b3938;
     text-shadow: 0 0 7px #827f7e;
 }
-#text1{
-	position: absolute;
-	top: 75%;
-	transform: translate(-50%,-50%);
-	left: 25%;
-		font-size: 35px;
-	text-shadow:   
-        3px -1px 0 orange; /* Тінь з різними зсувами, щоб створити ефект обводки */
-	font-family:Consolas ;
-	color:#222527;
-	text-align: left;
-}
-#text2{
-	position: absolute;
-	top: 25%;
-	transform: translate(-50%,-50%);
-	left: 50%;
-		font-size: 35px;
-	text-shadow:  
-        3px -1px 0 orange;/* Тінь з різними зсувами, щоб створити ефект обводки */
-	font-family:Consolas ;
-	color:#222527;
-	text-align: left;
-}
-#text3{
-	position: absolute;
-	top: 75%;
-	transform: translate(-50%,-50%);
-	left: 75%;
-		font-size: 35px;
-	text-shadow:   
-        3px -1px 0 orange;
-	font-family:Consolas ;
-	color:#222527;
-	text-align: left;
-}
-#box1-title{
-	
-}
-#box1-img{
-	height: 400px;
-	width: 100%;
-	opacity: 0.;
-}
+
+
+
 .box{
 	position: relative;
 	width: 100%;
-	overflow-x: hidden;
+	
+}
+#box1-title{
+	left: 50px;
+	top: 60px;
+	position: absolute;
+text-shadow:  3px -1px 0 orange;/* Тінь з різними зсувами, щоб створити ефект обводки */
+	font-family:Consolas;
+	color:#222527;
+	text-align:left;
+	font-size: 18px;
+
+}
+#box1-title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px; /* Товщина лінії */
+    background-color: black; /* Колір лінії */
+    margin-top: 10px; /* Відступ від верхнього елемента */
+    margin-bottom: 10px; /* Відступ від нижнього елемента */
+}
+
+#box1 {
+    margin: 0;
+    background-image: linear-gradient(to right, #a6a6a6 , #ffff );
+    width: 100%;
+    position: relative;
+    height: 350px;
+}
+
+
+
+#box2{
+	width: 100%;
+	padding: 5px;
+	left: 35%;
+	position: relative;
+	bottom: 0;
+}
+.form-row {
+	color: orange;
+	margin-bottom: 20px;
+ }
+
+.form-row label {
+
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#Opis input[type="text"] {
+    height: 45px; /* Set the height to your desired size */
+    /* Prevent resizing */
+    /* You can also add other styling properties as needed */
+}
+#img-box1{
+	top:0px;
+	right: 50px;
+	position: absolute;
+	height: 500px;
+	width: 500px;
 }

@@ -1,0 +1,169 @@
+.top-img{
+padding: 5px;
+width: 30px;
+height: 30px;
+}
+a{
+	color: orange
+}
+#nomer{
+left: 250px;
+	font-size: 9px;
+	text-decoration: none;
+	position: absolute;
+	top: 10px;
+	text-align: left;
+	color: orange;
+}
+.contact{
+	left: 10px;
+	font-size: 9px;
+	text-decoration: none;
+	position: absolute;
+	top: 10px;
+	text-align: left;
+	color: orange;
+}
+#top{
+	   position: sticky;
+	top: 0;
+ background: #40464a;
+  text-align: right;
+    width: 100%;
+    height: 41px;
+    top: 0;
+    z-index: 1000;
+ 
+    text-decoration: none;
+}
+body {
+	overflow-x: hidden;
+	margin: 0;
+  background-color:white;
+}
+body::after {
+	margin 0;
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  clip-path: polygon(100% 0, 25% 100%, 100% 100%);
+  background-color: #b2b8bc;
+}
+.top-img{
+	height: 100%;
+
+	
+}
+.top-img:hover{
+	background-color: silver;
+	
+}
+#top-menu {
+	margin: 0;
+    background: snow;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    z-index: 1000;
+ }   
+.top-menu-btn::after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 40px; /* Висота ліній залежить від висоти кнопок */
+    background-color: gray; /* Колір ліній */
+    margin: 5px 2px -15px; /* Відступи між лініями та текстом */
+}
+
+
+#top-menu-logo{
+	top: 0px;
+	height: 100%;
+	overflow-y: hidden;
+	position: absolute;
+	left: 60px;
+	transition-duration: 200ms;
+	transition-property: box-shadow;
+}
+#top-menu-logo-img{
+
+	width: 200px; 
+	height: 100%; 
+} 
+.top-menu-btn {
+ position: relative; 
+ display:inline-block; 
+ margin: 20px; 
+ padding: 10px;
+ height: 40px; 
+ color: #827f7f;
+font-size: 20px;
+ left: 36%;
+  }
+
+.top-menu-btn:hover {
+	
+    color: #3b3938;
+    text-shadow: 0 0 7px #827f7e;
+}
+
+
+
+.box{
+	position: relative;
+	width: 100%;
+	
+}
+#box1-title{
+	left: 50px;
+	top: 60px;
+	position: absolute;
+	font-family:cursive;
+	color:#222527;
+	text-align:left;
+	font-size: 21px;
+	text-shadow: 1px 1px 2px black;
+}
+
+
+#box1 {
+    background-image: linear-gradient(to right, #a6a6a6 , #ffff );
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+
+
+#box2{
+	width: 100%;
+	padding: 5px;
+	left: 35%;
+	position: relative;
+	bottom: 0;
+}
+.form-row {
+	color: orange;
+	margin-bottom: 20px;
+ }
+
+.form-row label {
+
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#Opis input[type="text"] {
+    height: 45px; /* Set the height to your desired size */
+    /* Prevent resizing */
+    /* You can also add other styling properties as needed */
+}
+#img-box1{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
